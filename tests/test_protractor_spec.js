@@ -18,7 +18,7 @@ describe('Protractor Demo App', function() {
       secondNumber.sendKeys(2);
   
       goButton.click();
-  
+      browser.sleep(2500);
       expect(latestResult.getText()).toEqual('3');
     });
 });
